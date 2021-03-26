@@ -77,6 +77,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: djangoService
-          cluster: djangoCluster
+          service: djangoService1
+          cluster: djangoCluster1
           wait-for-service-stability: true
